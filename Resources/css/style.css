@@ -1,0 +1,384 @@
+* {
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+
+
+html {
+    background-color: #fff;
+    color: #555;
+    font-family: 'Lato', sans-serif;
+    font-size: 20px;
+    font-weight: 300;
+    text-rendering: optimizeLegibility;
+    overflow-x: hidden !important;
+    margin: 0;
+}
+
+/* for floats in meals section ond to get margn above how it works */
+
+.clearfix {zoom: 1}
+.clearfix:after{
+    content: ".";
+    clear: both;
+    display: block;
+    height: 0;
+    visibility: hidden;
+}
+ /* ---------------------*/
+.row {
+    max-width: 1140px;
+    margin:0 auto 0 auto;
+}
+
+.main-header-bar {
+    position: absolute;
+    width:100%;
+    top:50%;
+    left:50%;
+    transform:translate(-50%, -50%);
+    margin-left:20px;
+}
+
+header {
+    background-image: linear-gradient(rgba(0,0,0,0.6),rgba(0,0,0,0.6)), url(img/main.jpg);
+    height:100vh;
+    background-size: cover;
+    background-position:center;
+    background-attachment: fixed;
+
+}
+
+/*        -----Headings-------     */
+
+.main-header-bar .mainfoood h1,h2,h3{
+   
+    
+    text-transform: uppercase;
+    font-weight: 300;
+    
+    
+}
+
+.main-header-bar .mainfoood h1 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #ffff;
+    word-spacing: 4px;
+    font-size: 200%;
+    letter-spacing: 1px;
+
+}
+
+h2 {
+    font-size: 180%;
+    word-spacing: 2px;
+    text-align: center;
+    margin-bottom: 30px;
+    letter-spacing: 1px;
+    
+}
+
+h2::after {
+    display: block;
+    height: 2px;
+    background-color: #d70f64;
+    width: 100px;
+    content: "";
+    margin: 0 auto;
+    margin-top: 30px;
+
+}
+
+h3 {
+    font-weight: 110%;
+    margin-bottom: 15px;
+
+}
+
+
+/* BUTTONS */
+
+.main-header-bar .btn  { 
+    display: inline-block; 
+    color: #fff;
+    padding: 10px 30px; 
+    font-weight: 300; 
+    text-decoration: none;
+    border-radius: 200px;
+    margin-top: 20px;
+    transition: background-color 0.2s, border 0.2s, color 0.2s;
+}
+
+
+.main-header-bar .btn-full {
+    background-color: #d70f64;
+    border: 1px solid #d70f64;
+    margin-right: 15px;
+}
+
+.main-header-bar .btn-ghost {
+    border: 1px solid #d70f64;
+    color: #d70f64;
+}
+
+/* Button hovers effect */
+
+.main-header-bar .btn:hover,
+.main-header-bar .btn:active{
+    background-color: #b70d55;
+}
+
+.main-header-bar .btn-full:hover,
+.main-header-bar .btn-full:active {
+    background-color: #b70d55;
+    border: 1px solid #b70d55;
+}
+
+.main-header-bar .btn-ghost:hover,
+.main-header-bar .btn-ghost:active {
+    border: 1px solid #b70d55;
+    color: #fff;
+}
+
+/* logo */
+.food-logo {
+    height: 100px;
+    width: auto;
+    float: left;
+    margin-top: 20px;
+}
+
+.row .main-navbar {
+    float: right;
+    margin-top: 55px;
+}
+
+.row .main-navbar li {
+    float: right;
+    display: block;
+    margin-left: 40px;
+    list-style: none;
+    transition: border-bottom 0.2s;
+    padding: 8px 0;
+}
+
+.row .main-navbar a:link, 
+.row .main-navbar a:visited {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 90%;
+    /* border-bottom: 2px solid transparent; */
+    
+
+}
+
+.row .main-navbar a :hover,
+.row .main-navbar  a :active {
+    border-bottom: 2px solid #d70f64;
+    
+}
+
+/*                      --------------HEADER COMPLETED -------------- */
+
+
+/*              ----------------    Section 1--------------*/
+
+section {
+    padding: 80px 0px;
+    margin-left: 30px;
+}
+
+.long-para {
+    line-height: 145%;
+    width: 70%;
+    margin-left: 15%;
+    margin-bottom: 30px;
+}
+
+.card {
+    padding: 1%;
+
+}
+
+.card p {
+    font-size: 90%;
+    line-height: 145%;
+}
+
+.sec1-icon {
+    font-size: 300%;
+    display: block;
+    color: #d70f64;
+    margin-bottom: 10px;
+
+}
+
+/*           ------------------SECTION FATURES 1 ENDED-------*/
+
+
+/*                --------SECTION  MEALS 2 ----------------------*/
+
+.section-meals {
+    padding: 0;
+    margin-left: 0px;
+    
+}
+
+
+#mealss,.meals-showcase {
+    list-style: none;
+    width: 100%;
+    margin: 0;
+    
+
+}
+
+.meals-showcase li {
+    display: block;
+    float: left;
+    width: 25%;
+    
+}
+
+.meal-img {
+    /* background-color: #000;
+    opacity: 0.6;   -----NOT Working */
+    /* background: rgba(0, 0, 0, 0.5); */
+    width: 100%;
+    margin: 0;
+    height: auto;
+    overflow: hidden !important;
+    transform: scale(1.02);
+    transition: transform 0.5s;
+
+    
+}
+
+.meal-img:hover {
+    transform: scale(1.06);
+    
+    
+}
+
+.meal-img img {
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+}
+/* ------   SECTION 2 Completed   ----------*/
+
+
+
+/* ----------------- How It Works ---------*/
+
+.section-steps {
+    background-color: #f4f4f4;
+    margin-left: 0px;
+}
+
+
+.steps-box:first-child {
+    text-align: right;
+    padding-right: 3%;
+    margin-top: 30px;
+
+}
+
+.steps-box:last-child {
+    padding-left: 3%;
+    margin-top: 70px;
+    text-align: left;
+
+}
+
+.app-phone {
+    width: 40%; 
+}
+
+.work-steps {
+    margin-bottom: 50px;
+}
+
+.work-steps:last-of-type {
+    margin-bottom: 80px;
+}
+
+.work-steps div {
+    color: #d70f64;
+    border: 2px solid #d70f64;
+    display: inline-block;
+    border-radius: 50%;
+    width: 55px;
+    height: 55px;
+    text-align: center;
+    padding: 5px;
+    float: left;
+    font-size: 150%;
+    margin-right: 25px;
+}
+
+.btn-app:link,
+.btn-app:visited{
+    border: 0;
+}
+
+.btn-app img {
+    height: 50px;
+    width:auto;
+    margin-right: 10px;
+}
+
+/*       ---------- SECTION 3 Completed ---------*/
+
+/*  -----Section 4 CITIES ----------     */
+
+.section-cities {
+    margin-right: 30px;
+}
+
+
+.card img {
+    width: 100%;
+    height: 150px;
+    margin-bottom: 15px;
+    margin-right:inherit ;
+
+}
+
+.city-feature {
+    margin-bottom: 5px;
+}
+
+.icons-small {
+    display: inline-block;
+    width: 30px;
+    text-align: center;
+    color: #d70f64;
+    font-size: 120%;
+    
+    /* to align icons with text */
+    line-height: 120%;
+    vertical-align: middle;
+    margin-top: -5px;
+    /*-------------------------*/
+}
+
+/*-------Link-----*/
+
+.site:link,
+.site:visited{
+    color: #b70d55;
+    text-decoration: none;
+    border-bottom: 1px solid #b70d55;
+    padding: 1px;
+    transition: border-bottom 0.2s, color 0.2s;
+}
+
+.site:link,
+.site:hover{
+    color: #555;
+    border-bottom:1px solid white;
+}
